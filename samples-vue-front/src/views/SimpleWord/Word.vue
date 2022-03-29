@@ -14,7 +14,7 @@ export default {
     };
   },
   created: function () {
-    //由于vue中的axios拦截器给请求加token都得是ajax请求，所以这里必须是axios方式去请求后台打开文件的controllerf方法
+    //由于vue中的axios拦截器给请求加token都得是ajax请求，所以这里建议axios方式去请求后台打开文件的controller方法
     axios
       .post("/api/SimpleWord/Word")
       .then((response) => {
