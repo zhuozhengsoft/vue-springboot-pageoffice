@@ -102,7 +102,9 @@ com.zhuozhengsoft.pageoffice.poserver.Server poserver = new com.zhuozhengsoft.pa
 
 <!--注意：8081是后端项目端口号，samples-springboot-back是项目名称，这些都不是固定死的，根据您后端项目的具体地址具体引用即可。如何判断当前pageoffice.js的引用地址是否正确呢？方法是可以将这个引用pageoffice.js的url地址直接粘贴到浏览器地址栏，如果提示能正确下载到这个js文件，则说明引用地址正确。-->
 
-`<script type="text/javascript" src="http://localhost:8081/samples-springboot-back/pageoffice.js"></script>`
+```
+<script type="text/javascript" src="http://localhost:8081/samples-springboot-back/pageoffice.js"></script>
+```
 
 2. 在您要打开文件的Vue页面，通过超链接点击或者按钮点击触发调用POBrowser打开一个新的Vue页面。比如通过超链接打开了一个新的Word.vue的空白页面，代码如下：
 
@@ -112,38 +114,45 @@ com.zhuozhengsoft.pageoffice.poserver.Server poserver = new com.zhuozhengsoft.pa
 
 3. 在Word.vue页面中通过vue的create钩子函数通过axios去调用后端打开文件的controller。
 
-    created: function () {
-        //由于vue中的axios拦截器给请求加token都得是ajax请求，所以这里建议用axios方式去请求后台打开文件的controller方法
-        axios
-          .post("/api/SimpleWord/Word")
-          .then((response) => {
-            this.poHtmlCode = response.data;
-          })
-          .catch(function (err) {
-            console.log(err);
-          });
-      },
+```vue
+created: function () {
+    //由于vue中的axios拦截器给请求加token都得是ajax请求，所以这里建议用axios方式去请求后台打开文件的controller方法
+    axios
+      .post("/api/SimpleWord/Word")
+      .then((response) => {
+        this.poHtmlCode = response.data;
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+  },
+```
 4. 在Word.vue页面中通过v-html标签将上一步axios请求返回的data输出到当前页面的某个div（这个div用来存放PageOffice控件）中，例如：
 
   `<div style="height: 800px; width: auto" v-html="poHtmlCode" />`
 
 5. 在Word.vue页面的methods方法中添加PageOffice中常用的保存，打印等方法。例如：
 
-    methods: {
-    //控件中的一些常用方法都在这里调用，比如保存，打印等等
-    /**
-     * Save()，callParent()等方法都是/api/SimpleWord/Word这个后台controller中PageOfficeCtrl控件通过poCtrl.addCustomToolButton定义的方法。
-     */
-    Save() {
-      document.getElementById("PageOfficeCtrl1").WebSave();
-    }
-    },
+```vue
+methods: {
+//控件中的一些常用方法都在这里调用，比如保存，打印等等
+/**
+ * Save()，callParent()等方法都是/api/SimpleWord/Word这个后台controller中PageOfficeCtrl控件通过poCtrl.addCustomToolButton定义的方法。
+ */
+Save() {
+  document.getElementById("PageOfficeCtrl1").WebSave();
+}
+},
+```
+
 6. 在Word.Vue页面的mounted方法中将上一步的PageOffice中的自定义保存挂载到window对象上。比如：
 
-    mounted: function () {
-    // 将PageOffice控件中的方法通过mounted挂载到window对象上，只有挂载后才能被vue组件识别
-    window.Save = this.Save;
-    },
+```vue
+mounted: function () {
+// 将PageOffice控件中的方法通过mounted挂载到window对象上，只有挂载后才能被vue组件识别
+window.Save = this.Save;
+},
+```
 ### 七、电子印章功能说明
 
 ​     如果您的项目要用到PageOffice自带电子印章功能，请按下面的步骤进行操作。
