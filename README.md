@@ -35,7 +35,7 @@
 
 ### 六、集成PageOffice到您的项目中的关键步骤
 
-##### 后端Spingboot项目
+- ##### 后端Springboot项目
 
 1. 在您项目的pom.xml中通过下面的代码引入PageOffice依赖。
 
