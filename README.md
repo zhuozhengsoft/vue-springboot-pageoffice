@@ -35,81 +35,80 @@
 
 ### 六、集成PageOffice到您的项目中的关键步骤
 
-- ##### 后端Spingboot项目
+##### 后端Spingboot项目
 
-  1. 在您项目的pom.xml中通过下面的代码引入PageOffice依赖。
+1. 在您项目的pom.xml中通过下面的代码引入PageOffice依赖。
 
-  > pageoffice.jar的所有Releases版本都已上传到了Maven中央仓库，具体您要引用哪个版本请在Maven中央仓库地址中查看，建议使用Maven中央仓库中pageoffice.jar的最新版本。(Maven中央仓库中pageoffice.jar的地址：https://mvnrepository.com/artifact/com.zhuozhengsoft/pageoffice)
+> pageoffice.jar的所有Releases版本都已上传到了Maven中央仓库，具体您要引用哪个版本请在Maven中央仓库地址中查看，建议使用Maven中央仓库中pageoffice.jar的最新版本。(Maven中央仓库中pageoffice.jar的地址：https://mvnrepository.com/artifact/com.zhuozhengsoft/pageoffice)
 
-  ```
-  <dependency>
-       <groupId>com.zhuozhengsoft</groupId>   
-    <artifactId>pageoffice</artifactId>   
-    <version>5.3.0.4</version>
-  </dependency>
-  ```
+```
+<dependency>
+     <groupId>com.zhuozhengsoft</groupId>   
+  <artifactId>pageoffice</artifactId>   
+  <version>5.3.0.4</version>
+</dependency>
+```
 
-  2. 在您项目的启动类Application类中配置如下代码。
+2. 在您项目的启动类Application类中配置如下代码。
 
-  ```
-  @Bean
-     public ServletRegistrationBean pageofficeRegistrationBean()  {
-  com.zhuozhengsoft.pageoffice.poserver.Server poserver = new com.zhuozhengsoft.pageoffice.poserver.Server();
-  /**如果当前项目是打成jar或者war包运行，强烈建议将license的路径更换成某个固定的绝
-  *对路径下，不要放当前项目文件夹下,为了防止每次重新发布项目导致license丢失问题。
-  * 比如windows服务器下：D:/pageoffice，linux服务器下:/root/pageoffice
-   */
-   //设置PageOffice注册成功后,license.lic文件存放的目录
-   poserver.setSysPath(poSysPath);
-   //poSysPath可以在application.properties这个文件中配置，也可以直设置文件夹路径，比如：poserver.setSysPath("D:/pageoffice");
-    ServletRegistrationBean srb = new ServletRegistrationBean(poserver);
-    srb.addUrlMappings("/poserver.zz");
-    srb.addUrlMappings("/posetup.exe");
-    srb.addUrlMappings("/pageoffice.js");
-    srb.addUrlMappings("/jquery.min.js");
-    srb.addUrlMappings("/pobstyle.css");
-    srb.addUrlMappings("/sealsetup.exe");
-    return srb;
+```
+@Bean
+   public ServletRegistrationBean pageofficeRegistrationBean()  {
+com.zhuozhengsoft.pageoffice.poserver.Server poserver = new com.zhuozhengsoft.pageoffice.poserver.Server();
+/**如果当前项目是打成jar或者war包运行，强烈建议将license的路径更换成某个固定的绝
+*对路径下，不要放当前项目文件夹下,为了防止每次重新发布项目导致license丢失问题。
+* 比如windows服务器下：D:/pageoffice，linux服务器下:/root/pageoffice
+ */
+ //设置PageOffice注册成功后,license.lic文件存放的目录
+ poserver.setSysPath(poSysPath);
+ //poSysPath可以在application.properties这个文件中配置，也可以直设置文件夹路径，比如：poserver.setSysPath("D:/pageoffice");
+  ServletRegistrationBean srb = new ServletRegistrationBean(poserver);
+  srb.addUrlMappings("/poserver.zz");
+  srb.addUrlMappings("/posetup.exe");
+  srb.addUrlMappings("/pageoffice.js");
+  srb.addUrlMappings("/jquery.min.js");
+  srb.addUrlMappings("/pobstyle.css");
+  srb.addUrlMappings("/sealsetup.exe");
+  return srb;
+  }
+```
+
+3. 新建Controller并调用PageOffice。例如：
+
+```
+ @RequestMapping(value="/Word")
+ @ResponseBody
+    public String showWord(HttpServletRequest request) {
+        PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
+        //设置服务页面，/api是前端vue项目的代理地址
+        poCtrl.setServerPage("/api/poserver.zz");
+        poCtrl.addCustomToolButton("保存", "Save", 1);
+        poCtrl.addCustomToolButton("另存为", "SaveAs", 12);
+        poCtrl.addCustomToolButton("打印设置", "PrintSet", 0);
+        poCtrl.addCustomToolButton("打印", "PrintFile", 6);
+        poCtrl.addCustomToolButton("全屏/还原", "IsFullScreen", 4);
+        poCtrl.addCustomToolButton("-", "", 0);
+        poCtrl.addCustomToolButton("关闭", "Close", 21);
+        //设置保存方法的url
+        poCtrl.setSaveFilePage("/api/SimpleWord/save");
+        //打开word
+        poCtrl.webOpen("/api/doc/SimpleWord/test.doc", OpenModeType.docNormalEdit, "张三");
+        return  poCtrl.getHtmlCode("PageOfficeCtrl1");
     }
-  ```
-
-  3. 新建Controller并调用PageOffice，例如：
-
-  ```
-   @RequestMapping(value="/Word")
-   @ResponseBody
-      public String showWord(HttpServletRequest request) {
-          PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-          //设置服务页面，/api是前端vue项目的代理地址
-          poCtrl.setServerPage("/api/poserver.zz");
-          poCtrl.addCustomToolButton("保存", "Save", 1);
-          poCtrl.addCustomToolButton("另存为", "SaveAs", 12);
-          poCtrl.addCustomToolButton("打印设置", "PrintSet", 0);
-          poCtrl.addCustomToolButton("打印", "PrintFile", 6);
-          poCtrl.addCustomToolButton("全屏/还原", "IsFullScreen", 4);
-          poCtrl.addCustomToolButton("-", "", 0);
-          poCtrl.addCustomToolButton("关闭", "Close", 21);
-          poCtrl.setSaveFilePage("/api/SimpleWord/save");//设置保存方法的url
-          //打开word
-          poCtrl.webOpen("/api/doc/SimpleWord/test.doc", OpenModeType.docNormalEdit, "张三");
-          return  poCtrl.getHtmlCode("PageOfficeCtrl1");
-      }
-  ```
-
-
+```
 - ##### 前端Vue项目
 
 1.  在您Vue项目的根目录下index.html中引用后端项目根目录下pageoffice.js文件。例如：
 
-   <!--注意：8081是后端项目端口号，samples-springboot-back是项目名称，这些都不是固定死的，根据您后端项目的具体地址具体引用即可。如何判断当前pageoffice.js的引用地址是否正确呢？方法是可以将这个引用pageoffice.js的url地址直接粘贴到浏览器地址栏，如果提示能正确下载到这个js文件，则说明引用地址正确。-->
+<!--注意：8081是后端项目端口号，samples-springboot-back是项目名称，这些都不是固定死的，根据您后端项目的具体地址具体引用即可。如何判断当前pageoffice.js的引用地址是否正确呢？方法是可以将这个引用pageoffice.js的url地址直接粘贴到浏览器地址栏，如果提示能正确下载到这个js文件，则说明引用地址正确。-->
 
-   `<script type="text/javascript" src="http://localhost:8081/samples-springboot-back/pageoffice.js"></script>`
+`<script type="text/javascript" src="http://localhost:8081/samples-springboot-back/pageoffice.js"></script>`
 
 2. 在您要打开文件的Vue页面，通过超链接点击或者按钮点击触发调用POBrowser打开一个新的Vue页面。比如通过超链接打开了一个新的Word.vue的空白页面，代码如下：
 
-   ```
-   <a href="javascript:POBrowser.openWindowModeless('CommentOnly/Word','width=1150px;height=900px;');">
-   ```
+```
+<a href="javascript:POBrowser.openWindowModeless('CommentOnly/Word','width=1150px;height=900px;');">
+```
 
 3. 在Word.vue页面中通过vue的create钩子函数通过axios去调用后端打开文件的controller。
 
