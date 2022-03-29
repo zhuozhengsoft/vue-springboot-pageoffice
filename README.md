@@ -129,7 +129,9 @@ created: function () {
 ```
 4. 在Word.vue页面中通过v-html标签将上一步axios请求返回的data输出到当前页面的某个div（这个div用来存放PageOffice控件）中，例如：
 
-  `<div style="height: 800px; width: auto" v-html="poHtmlCode" />`
+```
+  <div style="height: 800px; width: auto" v-html="poHtmlCode" />
+```
 
 5. 在Word.vue页面的methods方法中添加PageOffice中常用的保存，打印等方法。例如：
 
