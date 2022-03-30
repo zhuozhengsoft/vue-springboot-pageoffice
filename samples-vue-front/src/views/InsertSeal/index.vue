@@ -9,7 +9,7 @@
 			<div style="margin: 10px" align="center">
 				<p>
 					点击
-					<a href="http://localhost:8086/samples-springboot-back/adminseal.zz" target="_blank">电子印章简易管理平台</a> 添加、删除印章。管理员:admin 密码:111111
+					<a href="http://localhost:8081/samples-springboot-back/adminseal.zz" target="_blank">电子印章简易管理平台</a> 添加、删除印章。管理员:admin 密码:111111
 				<span  style="font-size:12px;color: red">(为了系统使用印章的安全性，强烈建议修改此登录密码！！)</span>
 				</p>
 				<p>

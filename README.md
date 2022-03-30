@@ -14,6 +14,8 @@
 
 ### 四、项目运行步骤
 
+使用git clone或者直接下载项目压缩包到本地并解压缩。
+
 - #### 前端Vue项目（samples-vue-front）
 
 1. **npm install** ：安装依赖
@@ -21,10 +23,9 @@
 
 - #### 后端Springboot项目（samples-springboot-back）
 
-1. 使用git clone或者直接下载项目压缩包到本地并解压缩。
-2. 打开application.properties文件，将posyspath变量的值配置成您上一步新建的PageOffice系统文件夹  （例如：D:/pageoffice）。
-3. 如果您要测试PageOffice的电子印章功能，请拷贝当前项目根目录下的poseal.db文件到PageOffice系统文件夹下（例如：D:/pageoffice/poseal.db）。
-4. 运行项目：点击运行按钮即可。
+1. 打开application.properties文件，将posyspath变量的值配置成您上一步新建的PageOffice系统文件夹  （例如：D:/pageoffice）。
+2. 如果您要测试PageOffice的电子印章功能，请拷贝当前项目根目录下的poseal.db文件到PageOffice系统文件夹下（例如：D:/pageoffice/poseal.db）。
+3. 运行项目：点击运行按钮即可。
 
 > 注意：如果后端Springboot项目的8081端口已经被占用，后端项目更换其他端口后，请记得将前端Vue项目samples-vue-front/config下中的index.js中的 proxyTable对象中的 target指向的地址改成更改后的后端项目的端口，并且将前端Vue项目的index.html中对pageoffice.js引用时的后端项目的端口也改成更改后的端口。
 
