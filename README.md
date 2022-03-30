@@ -1,7 +1,7 @@
 # vue-springboot-pageoffice
 ### 一、简介
 
-​       vue-springboot-pageoffice项目演示了在前端vue框架和后端springboot框架的结合下如何使用PageOffice产品，此项目是一个demo项目。
+​       vue-springboot-pageoffice项目演示了在前端Vue框架和后端Springboot框架的结合下如何使用PageOffice产品，此项目是一个demo项目。
 
 ### 二、项目环境要求
 
@@ -10,7 +10,7 @@
 
 ### 三、项目运行准备
 
-   在当前服务器磁盘上新建一个PageOffice系统文件夹，例如：D:/pageoffice（此文件夹将用来存放PageOffice注册后生成的授权文件“license.lic”）。
+   在当前服务器磁盘上新建一个pageoffice系统文件夹，例如：D:/pageoffice（此文件夹将用来存放PageOffice注册后生成的授权文件“license.lic”）。
 
 ### 四、项目运行步骤
 
@@ -23,8 +23,8 @@
 
 1. 使用git clone或者直接下载项目压缩包到本地并解压缩。
 2. 打开application.properties文件，将posyspath变量的值配置成您上一步新建的PageOffice系统文件夹  （例如：D:/pageoffice）。
-3.  如果您要测试PageOffice的电子印章功能，请拷贝当前项目根目录下的poseal.db文件到PageOffice系统文件夹下（例如：D:/pageoffice/poseal.db）。
-4.  运行项目：点击运行按钮即可。
+3. 如果您要测试PageOffice的电子印章功能，请拷贝当前项目根目录下的poseal.db文件到PageOffice系统文件夹下（例如：D:/pageoffice/poseal.db）。
+4. 运行项目：点击运行按钮即可。
 
 > 注意：如果后端Springboot项目的8081端口已经被占用，后端项目更换其他端口后，请记得将前端Vue项目samples-vue-front/config下中的index.js中的 proxyTable对象中的 target指向的地址改成更改后的后端项目的端口，并且将前端Vue项目的index.html中对pageoffice.js引用时的后端项目的端口也改成更改后的端口。
 
@@ -109,7 +109,7 @@ com.zhuozhengsoft.pageoffice.poserver.Server poserver = new com.zhuozhengsoft.pa
 2. 在您要打开文件的Vue页面，通过超链接点击或者按钮点击触发调用POBrowser打开一个新的Vue页面。比如通过超链接打开了一个新的Word.vue的空白页面，代码如下：
 
 ```
-<a href="javascript:POBrowser.openWindowModeless('CommentOnly/Word','width=1150px;height=900px;');">
+<a href="javascript:POBrowser.openWindowModeless('SimpleWord/Word','width=1150px;height=900px;');">
 ```
 
 3. 在Word.vue页面中通过vue的create钩子函数通过axios去调用后端打开文件的controller。
