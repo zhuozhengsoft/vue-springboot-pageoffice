@@ -5,7 +5,7 @@
 
 ### 二、项目环境要求
 
-- 前端Vue项目（samples-vue-front）：Node.js10及以上版本
+- 前端Vue项目（samples-vue-front）:Node.js10及以上版本
 - 后端Springboot项目（samples-springboot-back）：Intelij IDEA,jdk1.8及以上版本
 
 ### 三、项目运行准备
@@ -14,12 +14,12 @@
 
 ### 四、项目运行步骤
 
-- ##### 前端Vue项目（samples-vue-front）
+- #### 前端Vue项目（samples-vue-front）
 
 1. **npm install** ：安装依赖
 2. **npm run dev** ：运行启动
 
-- ##### 后端Springboot项目（samples-springboot-back）
+- #### 后端Springboot项目（samples-springboot-back）
 
 1. 使用git clone或者直接下载项目压缩包到本地并解压缩。
 2. 打开application.properties文件，将posyspath变量的值配置成您上一步新建的PageOffice系统文件夹  （例如：D:/pageoffice）。
@@ -35,7 +35,7 @@
 
 ### 六、集成PageOffice到您的项目中的关键步骤
 
-- ##### 后端Springboot项目
+- #### 后端Springboot项目
 
 1. 在您项目的pom.xml中通过下面的代码引入PageOffice依赖。
 
@@ -96,7 +96,7 @@ com.zhuozhengsoft.pageoffice.poserver.Server poserver = new com.zhuozhengsoft.pa
         return  poCtrl.getHtmlCode("PageOfficeCtrl1");
     }
 ```
-- ##### 前端Vue项目
+- #### 前端Vue项目
 
 1.  在您Vue项目的根目录下index.html中引用后端项目根目录下pageoffice.js文件。例如：
 
