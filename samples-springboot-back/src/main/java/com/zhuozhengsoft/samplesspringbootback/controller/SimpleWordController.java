@@ -50,7 +50,8 @@ public class SimpleWordController {
             //设置保存页面
             poCtrl.setSaveFilePage("/api/SimpleWord/save");//设置处理文件保存的请求方法
             //打开Word文档
-            poCtrl.webOpen(dir+"/SimpleWord/test.doc", OpenModeType.docNormalEdit, "张三");
+            //打开磁盘路径的话有两种写法：1.D:\\doc\\test.doc  2.file://D:/doc/test.doc
+            poCtrl.webOpen("file://"+dir+"/SimpleWord/test.doc", OpenModeType.docNormalEdit, "张三");
             return poCtrl.getHtmlCode("PageOfficeCtrl1");
         }
 
