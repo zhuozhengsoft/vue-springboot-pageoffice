@@ -1,7 +1,6 @@
 <template>
 	<div class="Word1">
-	第二个页面
-	  <div style="width:auto; height:700px; border:solid 1px red;" v-html="poHtmlCode" >
+	  <div style="width:auto; height:900px;" v-html="poHtmlCode" >
 	  </div>
 	</div>
 </template>
