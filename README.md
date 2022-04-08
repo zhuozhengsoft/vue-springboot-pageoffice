@@ -110,7 +110,7 @@ com.zhuozhengsoft.pageoffice.poserver.Server poserver = new com.zhuozhengsoft.pa
 2. 在您要打开文件的Vue页面，通过超链接点击或者按钮点击触发调用POBrowser打开一个新的Vue页面。比如通过超链接打开了一个新的Word.vue的空白页面，代码如下：
 
 ```
-<a href="javascript:POBrowser.openWindowModeless('SimpleWord/Word','width=1150px;height=900px;');">
+<a href="javascript:POBrowser.openWindowModeless('SimpleWord/Word','width=1150px;height=900px;');">最简单在线打开保存Word文件</a>
 ```
 
 3. 在Word.vue页面中通过vue的create钩子函数通过axios去调用后端打开文件的controller。
