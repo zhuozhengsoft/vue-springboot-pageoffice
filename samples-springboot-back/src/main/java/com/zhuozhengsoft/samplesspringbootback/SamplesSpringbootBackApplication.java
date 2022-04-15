@@ -14,6 +14,8 @@ public class SamplesSpringbootBackApplication {
 
     @Value("${posyspath}")
     private String poSysPath;
+    @Value("${popassword}")
+    private String poPassword;
 
     public static void main(String[] args) {
         SpringApplication.run(SamplesSpringbootBackApplication.class, args);
@@ -47,7 +49,7 @@ public class SamplesSpringbootBackApplication {
     @Bean
     public ServletRegistrationBean zoomsealRegistrationBean() throws FileNotFoundException {
         com.zhuozhengsoft.pageoffice.poserver.AdminSeal adminSeal = new com.zhuozhengsoft.pageoffice.poserver.AdminSeal();
-        adminSeal.setAdminPassword(poSysPath);//设置印章管理员admin的登录密码（为了安全起见，强烈建议修改此密码）
+        adminSeal.setAdminPassword(poPassword);//设置印章管理员admin的登录密码（为了安全起见，强烈建议修改此密码）
         /**如果当前项目是打成jar或者war包运行，强烈建议将poseal.db文件的路径更换成某个固定的绝对路径下,不要放当前项目文件夹下,为了防止每次重新打包程序导致poseal.db被替换的问题。
          * 比如windows服务器下：D:/lic/，linux服务器下:/root/lic/
          */
