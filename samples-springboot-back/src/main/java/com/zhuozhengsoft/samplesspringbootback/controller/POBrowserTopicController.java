@@ -57,7 +57,7 @@ public class POBrowserTopicController {
         //添加自定义按钮
         poCtrl.addCustomToolButton("保存", "Save", 1);
         //设置保存页面
-        poCtrl.setSaveFilePage("/api/doc/POBrowserTopic/test.doc");//设置处理文件保存的请求方法
+        poCtrl.setSaveFilePage("/api/POBrowserTopic/save");//设置处理文件保存的请求方法
         //打开Word文档
         poCtrl.webOpen("/api/doc/POBrowserTopic/test.doc", OpenModeType.docNormalEdit, "张三");
         HashMap<Object, Object> map = new HashMap<>();
@@ -66,7 +66,7 @@ public class POBrowserTopicController {
 
         return map;
     }
-
+/**
     @RequestMapping(value = "Word3", method = RequestMethod.GET)
     public ModelAndView showWord3(HttpServletRequest request, Map<String, Object> map, HttpSession session) {
         String txt = (String) session.getAttribute("txt");
@@ -84,7 +84,7 @@ public class POBrowserTopicController {
         ModelAndView mv = new ModelAndView("POBrowserTopic/Word3");
         return mv;
     }
-
+*/
 
     @RequestMapping("Result2")
     @ResponseBody
