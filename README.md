@@ -36,6 +36,10 @@
 
 ### 六、集成PageOffice到您的项目中的关键步骤
 
+- #### 前后端分离项目下使用PageOffiece原理图
+
+  ![img](file:///E:\我的文档\Tencent Files\3011926887\Image\C2C\O6`ISI$PA][7~EYOI[C~W{7.png)
+
 - #### 后端Springboot项目
 
 1. 在您项目的pom.xml中通过下面的代码引入PageOffice依赖。
