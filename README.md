@@ -36,9 +36,10 @@
 
 ### 六、集成PageOffice到您的项目中的关键步骤
 
-- #### 前后端分离项目下使用PageOffiece原理图
+- #### 前后端分离项目下使用PageOffice原理图
 
-  ![img](file:///E:\我的文档\Tencent Files\3011926887\Image\C2C\O6`ISI$PA][7~EYOI[C~W{7.png)
+  ![O6`ISI$PA 7~EYOI C~W{7](https://user-images.githubusercontent.com/96857704/176814246-ac4f4156-952c-4199-a17b-37d06148a47a.png)
+
 
 - #### 后端Springboot项目
 
