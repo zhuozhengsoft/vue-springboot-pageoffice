@@ -19,7 +19,7 @@
 - #### 前端Vue项目（samples-vue-front）
 
 1. **npm install** ：安装依赖
-2. **npm run dev** ：运行启动
+2. **npm run serve** ：运行启动
 
 - #### 后端Springboot项目（samples-springboot-back）
 
