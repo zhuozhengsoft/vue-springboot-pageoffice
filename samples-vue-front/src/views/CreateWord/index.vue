@@ -2,7 +2,7 @@
 <div class="Word">
 	<div class="zz-content mc clearfix pd-28">
 	    <div align="center">
-	        <h2 class="fs-16">PageOffice 两种创建新文档的方式</h2>
+	        <h2>PageOffice 两种创建新文档的方式</h2>
 	    </div>
 	    <div class="demo mc" style="text-align:left;">
 			<hr>

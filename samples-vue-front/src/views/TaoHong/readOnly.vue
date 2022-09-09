@@ -1,7 +1,7 @@
 <template>
 	<div class="Word">
 		<div class="flow4">
-			<a href="#" onclick="window.external.close();"> <img alt="返回" src="/static/images/return.gif"
+			<a href="#" onclick="window.external.close();"> <img alt="返回" src="../../../public/images/return.gif"
 																 border="0"/>文件列表</a>
 			<span style="width: 100px;"> </span><strong>文档主题：</strong>
 			<span style="color: Red;">测试文件</span>

@@ -53,6 +53,10 @@
 	      Close() {
 	          window.external.close();
 	      },
+		  
+		  Save() {
+			  document.getElementById("PageOfficeCtrl1").WebSave();
+		  },
 	  
 	      //文档关闭前先提示用户是否保存
 	      BeforeBrowserClosed() {
@@ -72,6 +76,7 @@
     mounted: function(){
       // 将vue中的方法赋值给window
 	  window.Close = this.Close;
+	  window.Save = this.Save;
       window.AfterDocumentOpened = this.AfterDocumentOpened;
 	  window.BeforeBrowserClosed = this.BeforeBrowserClosed;
     }

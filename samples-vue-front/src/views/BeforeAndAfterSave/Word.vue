@@ -34,7 +34,6 @@
 		},
         BeforeDocumentSaved() {
             document.getElementById("PageOfficeCtrl1").Alert("BeforeDocumentSaved事件：文件就要开始保存了.");
-            return true;
           },
       
         AfterDocumentSaved(IsSaved) {
@@ -46,7 +45,7 @@
     mounted: function(){
       // 将vue中的方法赋值给window
 	  window.Save = this.Save;
-      window.BeforeDocumentSaved = this.BeforeDocumentSaved;
+    window.BeforeDocumentSaved = this.BeforeDocumentSaved;
 	  window.AfterDocumentSaved = this.AfterDocumentSaved;
     }
 }

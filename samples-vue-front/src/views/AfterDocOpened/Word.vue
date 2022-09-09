@@ -12,7 +12,6 @@
     name: 'Word',
     data(){
       return {
-        message: ' ',
         poHtmlCode: '',
 
       }

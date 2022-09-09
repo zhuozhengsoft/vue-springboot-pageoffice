@@ -11,12 +11,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand scroll-top logo"><img src="/static/images/logo.png" alt="skytouch"/></a>
+            <a href="#" class="navbar-brand scroll-top logo"><img src="../../public/images/logo.png" alt="skytouch"/></a>
           </div>
           <!--/.navbar-header-->
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav" id="mainNav" style="height:78px;">
-              <li class="active"><a href="#home" class="scroll-link"><img src="/static/images/home.png"></a></li>
+              <li class="active"><a href="#home" class="scroll-link"><img src="../../public/images/home.png"></a></li>
               <li style="height:0;width:0;visibility:hidden;"><a href="#describe" class="scroll-link isotopeWrapper">功能描述</a></li>
               <li><a href="#new" class="scroll-link">PageOfficeV5.0新特性</a></li>
               <li><a href="#jichu" class="scroll-link">基础功能</a></li>
@@ -137,7 +137,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>七、1、<a
                 href="javascript:POBrowser.openWindowModeless('CommentOnly/Word',  'width=1150px;height=900px;');">在Word文件只读的情况下向Word文件中插入键盘批注</a>
                 <p>演示WebOpen方法的第二个参数使用docCommentOnly，第三个参数传用户名，在Word文件只读的情况下向Word文件中插入键盘批注。</p>
@@ -145,7 +145,7 @@
               <td>/CommentOnly</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>七、2、<a
                 href="javascript:POBrowser.openWindowModeless('OnWordSelectionChange/Word',  'width=1150px;height=900px;');">OnWordSelectionChange事件的使用</a><span
                 style=" color:Red;">（企业版）</span>
@@ -154,7 +154,7 @@
               <td>/OnWordSelectionChange</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td> 
               <td>七、3、<a href="javascript:POBrowser.openWindowModeless('Token/index',  'width=1150px;height=900px;');">PageOffice浏览器方式打开文件的情况下如何传递token</a>
                 <p>演示PageOffice浏览器方式打开文件的情况下如何传递token，这种token验证方式常用于前后端分离的项目。</p>
               </td>
@@ -184,7 +184,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、1、<a
                 href="javascript:POBrowser.openWindowModeless('SimpleWord/Word', 'width=1150px;height=900px;');">最简单在线打开保存Word文件（URL地址方式）</a>
                 <p>
@@ -194,7 +194,7 @@
               <td>/SimpleWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、2、<a
                 href="javascript:POBrowser.openWindowModeless('SimpleWord/Word1', 'fullscreen=yes;');">以磁盘路径方式打开Office文件（以Word为例）</a>
                 <p>最简单的集成PageOffice的示例，但使用的是服务器磁盘路径的方式，这种方式的优点：1. 支持中文路径；2. 文件可以保存在服务器上的任意磁盘文件夹下。<span
@@ -205,7 +205,7 @@
             </tr>
 
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>一、3、<a
                 href="javascript:POBrowser.openWindowModeless('SimpleExcel/Excel','width=1200px;height=800px;');">最简单在线打开保存Excel文件（URL地址方式）</a>
                 <p>
@@ -214,7 +214,7 @@
               <td>/SimpleExcel</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-3.png"/></td>
+              <td><img src="../../public/images/office-3.png"/></td>
               <td>一、4、<a
                 href="javascript:POBrowser.openWindowModeless('SimplePPT/PPT','width=1200px;height=800px;');">最简单在线打开保存PPT文件（URL地址方式）</a>
                 <p>
@@ -223,7 +223,7 @@
               <td>/SimplePPT</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、5、<a
                 href="javascript:POBrowser.openWindowModeless('TitleText/Word' , 'width=1200px;height=800px;');">修改标题栏文本内容</a>
                 <p>通过给Caption属性赋值可以修改标题栏的文本内容，如果不给Caption赋值的话，标题栏默认显示的文本是：卓正 PageOffice 开发平台。</p>
@@ -231,7 +231,7 @@
               <td>/TitleText</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、6、<a
                 href="javascript:POBrowser.openWindowModeless('ControlBars/Word' , 'width=1200px;height=800px;');">隐藏标题栏、菜单栏、自定工具栏和Office工具栏（以Word为例）</a>
                 <p>演示如何隐藏标题栏、菜单栏、自定工具栏和Office工具栏，每个栏都是可以单独的控制是否隐藏。</p>
@@ -239,7 +239,7 @@
               <td>/ControlBars</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、7、<a
                 href="javascript:POBrowser.openWindowModeless('SetTheme/Word' , 'width=1200px;height=800px;');">设置PageOffice界面的主题样式</a>
                 <p>通过设置Theme 属性，改变控件窗口的界面样式。有自定义界面、Office2007界面和Office2010界面共三种主题可选。</p>
@@ -247,7 +247,7 @@
               <td>/SetTheme</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、8、<a
                 href="javascript:POBrowser.openWindowModeless('OpenWord/Word' , 'width=1200px;height=800px;');">最简单的只读打开Office文件（以Word为例）</a>
                 <p>
@@ -257,7 +257,7 @@
               <td>/OpenWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、9、<a
                 href="javascript:POBrowser.openWindowModeless('SaveReturnValue/Word' , 'width=1200px;height=800px;');">文档保存后给前台页面返回开发者自定义的保存结果值（以Word为例）</a>
                 <p>通过后台代码设置PageOffice.FileSaver.CustomSaveResult
@@ -266,7 +266,7 @@
               <td>/SaveReturnValue</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、10、<a
                 href="javascript:POBrowser.openWindowModeless('SendParameters/Word' , 'width=1200px;height=800px;');">给保存页面（SaveFilePage属性指向的页面）传递参数</a>
                 <p>
@@ -275,7 +275,7 @@
               <td>/SendParameters</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、11、<a
                 href="javascript:POBrowser.openWindowModeless('DataRegionFill/Word' , 'width=1200px;height=800px;');">给Word文档中的数据区域（DataRegion）赋值的简单示例</a>
                 <p>此示例是一个最简单的给Word数据区域赋值的示例。预先在Word文档中手工设置一些DataRegion，通过PageOffice可以实现在文档中标记的位置处动态填充内容。</p>
@@ -283,7 +283,7 @@
               <td>/DataRegionFill</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>一、12、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelFill/Excel' , 'width=1200px;height=800px;');">简单的给Excel表格赋值</a>
                 <p>此示例是一个最简单的给Excel单元格赋值的示例。</p>
@@ -291,7 +291,7 @@
               <td>/ExcelFill</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、13、<a
                 href="javascript:POBrowser.openWindowModeless('SubmitWord/Word' , 'width=1200px;height=800px;');">最简单的提交Word中的用户输入内容</a>
                 <p>演示PageOffice使用WordReader对象获取Word文档中数据的效果。此示例仅演示了最基本的功能，更详细功能请参考“综合演示”示例。</p>
@@ -299,7 +299,7 @@
               <td>/SubmitWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>一、14、<a
                 href="javascript:POBrowser.openWindowModeless('SubmitExcel/Excel' , 'width=1200px;height=800px;');">最简单的提交Excel中的用户输入内容</a>
                 <p>演示PageOffice使用ExcelReader对象获取Excel文档中单元格数据的效果。此示例仅演示了最基本的功能，更详细功能请参考“综合演示”示例。</p>
@@ -308,7 +308,7 @@
             </tr>
 
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、15、<router-link to="InsertSeal/index" target="_blank">演示加盖印章和签字功能（以Word为例）</router-link>
                 <p>演示PageOffice在线编辑时盖章和签字的功能。此示例演示了多种盖章操作和盖章后的效果，更多印章相关的功能请参考“综合演示”示例。印章管理平台可以轻易集成到您的软件系统中。</p>
               </td>
@@ -316,7 +316,7 @@
             </tr>
 
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、16、<a
                 href="javascript:POBrowser.openWindowModeless('CommandCtrl/Word','width=1200px;height=800px;');">控制保存、另存和打印功能（以Word为例）</a>
                 <p>演示怎样分别禁止Office的保存、另存和打印功能。</p>
@@ -324,7 +324,7 @@
               <td>/CommandCtrl</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、17、<a
                 href="javascript:POBrowser.openWindowModeless('WordSetTable/Word' , 'width=1200px;height=800px;');">给Word文档中Table赋值的简单示例</a>
                 <p>演示了PageOffice对Word文档中Table的操作，包括给单元格赋值和动态添加行的效果。</p>
@@ -332,7 +332,7 @@
               <td>/WordSetTable</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、18、<a
                 href="javascript:POBrowser.openWindowModeless('WordDataTag2/Word' , 'width=1200px;height=800px;');">使用数据标签（DataTag）给Word文件填充文本数据</a>
                 <p>
@@ -341,7 +341,7 @@
               <td>/WordDataTag2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、19、<a
                 href="javascript:POBrowser.openWindowModeless('CustomToolButton/Word' , 'width=1200px;height=800px;');">在PageOffice自定义工具条上添加一个按钮（以Word为例）</a>
                 <p>给PageOffice自定义工具条上添加一个按钮，并设置点击时执行的代码。</p>
@@ -349,15 +349,15 @@
               <td>/CustomToolButton</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、20、<a
-                href="javascript:POBrowser.openWindowModeless('AfterDocOpened/Word' , 'width=1200px;height=800px;');">添加文档打开之后在页面里触发的事件（以Word为例）</a>
+                href="javascript:POBrowser.openWindowModeless('AfterDocOpened/Word' , 'width=1200px;height=800px;','[{\'id\':5,\'name\':\'jsonx\'}]');">添加文档打开之后在页面里触发的事件（以Word为例）</a>
                 <p>演示怎样使用文档打开之后在页面里触发的事件，此事件很常用，需要在文件打开的时候执行的代码都可以放到此事件中执行。</p>
               </td>
               <td>/AfterDocOpened</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、21、<a
                 href="javascript:POBrowser.openWindowModeless('JsControlBars/Word' , 'width=1200px;height=800px;');">用JS控制PageOffice窗口上各个工具栏的隐藏和显示（以Word为例）</a>
                 <p>演示怎样用JS控制标题栏、菜单栏、自定义工具栏、Office工具栏的隐藏和显示。</p>
@@ -365,14 +365,14 @@
               <td>/JsControlBars</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、22、<router-link to="ConcurrencyCtrl/index" target="_blank">打开文档使用"并发控制"（以Word为例）</router-link>
                 <p>演示使用TimeSlice属性设置打开文档的并发控制时间，防止多个用户同时打开一个文件，出现编辑保存文件相互覆盖的问题。</p>
               </td>
               <td>/ConcurrencyCtrl</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>一、23、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelTable/Excel' , 'width=1200px;height=800px;');">对Excel中的一块区域赋值，并自动增加行</a>
                 <p>演示使用PageOffice的方法OpenTable，实现行增长，还可以循环使用原模板Table区域（B4:F13）单元格样式。 </p>
@@ -380,7 +380,7 @@
               <td>/ExcelTable</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、24、<a
                 href="javascript:POBrowser.openWindowModeless('SaveAsHTML/Word' , 'width=1200px;height=800px;');">另存文件为HTML格式（以Word为例）</a>
                 <p>演示使用PageOffice的WebSaveAsHTML方法，另存文件为Html格式保存到服务器。 </p>
@@ -388,7 +388,7 @@
               <td>/SaveAsHTML</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、25、<a
                 href="javascript:POBrowser.openWindowModeless('SaveAsMHT/Word' , 'width=1200px;height=800px;');">另存文件为MHT格式（以Word为例）</a>
                 <p>演示使用PageOffice的WebSaveAsMHT方法，另存文件为MHT格式保存到服务器。 </p>
@@ -396,7 +396,7 @@
               <td>/SaveAsMHT</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、26、<a
                 href="javascript:POBrowser.openWindowModeless('BeforeAndAfterSave/Word' , 'width=1200px;height=800px;');">文档保存前和保存后触发的事件（以Word为例）</a>
                 <p>演示怎样使用文档保存之前和保存之后触发的事件，这两个事件很常用，需要在保存文档时执行的js代码，都可以放到这两个事件中执行。 </p>
@@ -404,7 +404,7 @@
               <td>/BeforeAndAfterSave</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、27、<a
                 href="javascript:POBrowser.openWindowModeless('POBrowser2/Word','width=1200px;height=800px;');">PageOffice浏览器在线打开文档（以Word为例）</a>
                 <p>全新的文件打开方式“PageOffice浏览器”方式，此方式提供了更完美的浏览器兼容性解决方案。</p>
@@ -412,7 +412,7 @@
               <td>/POBrowser2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、28、<a
                 href="javascript:POBrowser.openWindowModeless('SaveDataAndFile/Word' , 'width=1200px;height=800px;');">既保存Word文档中指定位置的数据,又保存整篇文档（以Word为例）</a>
                 <p>演示如何将setSaveDataPage和setSaveFilePage方法结合使用,以达到同时保存数据和文件的效果。</p>
@@ -420,7 +420,7 @@
               <td>/SaveDataAndFile</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、29、<a
                 href="javascript:POBrowser.openWindowModeless('ImportWordData/Word' , 'width=1200px;height=800px;');">导入离线填报的Word文件并提交数据</a>
                 <p>演示如何导入离线填报的Word文件，提交并获取文件中的填报数据。</p>
@@ -428,7 +428,7 @@
               <td>/ImportWordData</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>一、30、<a
                 href="javascript:POBrowser.openWindowModeless('ImportExcelData/Excel' , 'width=1200px;height=800px;');">导入离线填报的Excel文件并提交数据</a>
                 <p>演示如何导入离线填报的Excel文件，提交并获取文件中的填报数据。</p>
@@ -436,7 +436,7 @@
               <td>/ImportExcelData</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、31、<a
                 href="javascript:POBrowser.openWindowModeless('WordDisableRight/Word' , 'width=1200px;height=800px;');">禁止Word中鼠标右键</a>
                 <p>演示如何使用服务器端方法setDisableWindowRightClick(true)禁止当前Word文档中鼠标右键菜单。</p>
@@ -444,7 +444,7 @@
               <td>/WordDisableRight</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>一、32、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelDisableRight/Excel' , 'width=1200px;height=800px;');">禁止Excel中鼠标右键</a>
                 <p>演示如何使用服务器端方法setDisableSheetRightClick(true)禁止当前Excel工作表鼠标右键菜单。</p>
@@ -452,14 +452,14 @@
               <td>/ExcelDisableRight</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、33、<router-link to="POBrowserTopic/index" target="_blank">POBrowser专题</router-link>
                 <p>演示如何给POBrowser打开的页面传递参数。</p>
               </td>
               <td>/POBrowserTopic</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、34、<a
                 href="javascript:POBrowser.openWindowModeless('NoFrame/Word', 'left=10px;top=10px;width=780px;height=900px;frame=no;');">演示隐藏POBrowser窗口的边框,并且控制POBrowser窗口的位置</a>
                 <p>演示使用POBrowser.openWindowModeless的第三个参数的frame=no;
@@ -468,7 +468,7 @@
               <td>/NoFrame</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>一、35、<a
                 href="javascript:POBrowser.openWindowModeless('RevisionOnly/Word', 'width=1050px;height=900px;');">演示强制留痕模式编辑Word文档</a>
                 <p>演示WebOpen方法的第二个参数使用docRevisionOnly，第三个参数传用户名，以强制留痕模式在线打开编辑Word文档。</p>
@@ -500,7 +500,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、1、<a
                 href="javascript:POBrowser.openWindowModeless('ReadOnly/Word' , 'width=1200px;height=800px;');">文件在线安全浏览（以Word为例）</a>
                 <p>使用只读模式在线打开Word文件，禁止编辑、拷贝、打印、另存。</p>
@@ -509,7 +509,7 @@
               <td>/ReadOnly</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、2、<a
                 href="javascript:POBrowser.openWindowModeless('DataBase/Word' , 'width=1200px;height=800px;');">打开保存数据库中的文件（以Word为例）</a>
                 <p>演示如何使用PageOffice以流的方式打开数据库中保存的文件。不推荐把文件保存在数据库中，不便于调试，并且影响数据库的查询速度。</p>
@@ -517,14 +517,14 @@
               <td>/DataBase</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、3、<router-link to="CreateWord/index" target="_blank">新建文件（以Word为例）</router-link>
                 <p>演示系统中创建文档的两种方式：1.复制文件创建新文件方法；2.利用PageOffice的WebCreateNew方法创建新文件。</p>
               </td>
               <td>/CreateWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/pdf.jpg"/></td>
+              <td><img src="../../public/images/pdf.jpg"/></td>
               <td>二、4、<a
                 href="javascript:POBrowser.openWindowModeless('POPDF/PDF' , 'width=1050px;height=900px;');">在线打开PDF文件</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -533,7 +533,7 @@
               <td>/POPDF</td>
             </tr>
             <tr>
-              <td><img src="/static/images/pdf.jpg"/></td>
+              <td><img src="../../public/images/pdf.jpg"/></td>
               <td>二、5、<a
                 href="javascript:POBrowser.openWindowModeless('SaveAsPDF/Word' , 'width=1200px;height=800px;');">Office文件转换为PDF文件（以Word为例）</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -542,7 +542,7 @@
               <td>/SaveAsPDF</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、6、<a
                 href="javascript:POBrowser.openWindowModeless('WordResWord/Word' , 'width=1200px;height=800px;');">后台编程插入Word文件到数据区域</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -551,7 +551,7 @@
               <td>/WordResWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、7、<a
                 href="javascript:POBrowser.openWindowModeless('WordResImage/Word' , 'width=1200px;height=800px;');">后台编程插入图片到数据区域</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -560,7 +560,7 @@
               <td>/WordResImage</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、8、<a
                 href="javascript:POBrowser.openWindowModeless('WordResExcel/Word' , 'width=1200px;height=800px;');">后台编程插入Excel文件到数据区域</a><span
                 style=" color:Red;">（企业版）</span>
@@ -570,7 +570,7 @@
             </tr>
 
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、9、<a
                 href="javascript:POBrowser.openWindowModeless('AddWaterMark/Word' , 'width=1200px;height=800px;');">给Word文档添加水印</a><span
                 style=" color:Red;">（企业版）</span>
@@ -579,7 +579,7 @@
               <td>/AddWaterMark</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、10、<a
                 href="javascript:POBrowser.openWindowModeless('WordDataTag/Word' , 'width=1200px;height=800px;');">使用数据标签（DataTag）给Word文件填充带格式的数据</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -589,7 +589,7 @@
               <td>/WordDataTag</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、11、<a
                 href="javascript:POBrowser.openWindowModeless('DataRegionCreate/Word' , 'width=1200px;height=800px;');">在Word中动态创建数据区域</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -599,7 +599,7 @@
               <td>/DataRegionCreate</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、12、<a
                 href="javascript:POBrowser.openWindowModeless('RunMacro/Word' , 'width=1200px;height=800px;');">执行文档中的宏命令（以Word为例）</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -608,7 +608,7 @@
               <td>/RunMacro</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、13、<router-link to="FileMakerSingle/index" target="_blank">FileMaker转换单个文档（以Word为例）</router-link><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>演示使用FileMaker对象动态生成文件的效果。虽然还是在客户端生成文件后保存到服务器上的，但是不在客户端显式的打开文件。</p>
@@ -616,7 +616,7 @@
               <td>/FileMakerSingle</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、14、<a
                 href="javascript:POBrowser.openWindowModeless('WordTable/Word' , 'width=1200px;height=800px;');">向Word文档中的Table插入新行并赋值</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -625,7 +625,7 @@
               <td>/WordTable</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、15、<a
                 href="javascript:POBrowser.openWindowModeless('WordHandDraw/Word' , 'width=1200px;height=800px;');">手写批注接口演示</a><span
                 style=" color:Red;">（企业版）</span>
@@ -634,7 +634,7 @@
               <td>/WordHandDraw</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、16、<a
                 href="javascript:POBrowser.openWindowModeless('DataRegionTable/Word' , 'width=1200px;height=800px;');">获取Word文件中表格的数据</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -643,7 +643,7 @@
               <td>/DataRegionTable</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、17、<a
                 href="javascript:POBrowser.openWindowModeless('DataRegionText/Word' , 'width=1200px;height=800px;');">控制数据区域文本的样式</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -652,7 +652,7 @@
               <td>/DataRegionText</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、18、<a
                 href="javascript:POBrowser.openWindowModeless('SetDrByUserWord/index' , 'width=1200px;height=800px;');">控制不同用户编辑Word文档中不同的区域</a><span
                 style=" color:Red;"></span>
@@ -661,7 +661,7 @@
               <td>/SetDrByUserWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、19、<a
                 href="javascript:POBrowser.openWindowModeless('SetDrByUserWord2/index' , 'width=1200px;height=800px;');">控制不同用户编辑Word文档中不同的区域（可同时编辑）</a><span
                 style=" color:Red;">（企业版）</span>
@@ -670,7 +670,7 @@
               <td>/SetDrByUserWord2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、20、<a
                 href="javascript:POBrowser.openWindowModeless('SetHandDrawByUser/index' , 'width=1200px;height=800px;');">控制用户打开文件只能看到自己的手写</a><span
                 style=" color:Red;">（企业版）</span>
@@ -679,7 +679,7 @@
               <td>/SetHandDrawByUser</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、21、<a
                 href="javascript:POBrowser.openWindowModeless('MergeWordCell/Word' , 'width=1200px;height=800px;');">使用程序合并Word文件中表格的单元格并赋值</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -688,7 +688,7 @@
               <td>/MergeWordCell</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、22、<a
                 href="javascript:POBrowser.openWindowModeless('ClickDataRegion/Word' , 'width=1200px;height=800px;');">响应数据区域点击事件</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -697,7 +697,7 @@
               <td>/ClickDataRegion</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、23、<a
                 href="javascript:POBrowser.openWindowModeless('MergeExcelCell/Excel' , 'width=1200px;height=800px;');">使用程序合并Excel的单元格并设置格式和赋值</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -706,7 +706,7 @@
               <td>/MergeExcelCell</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、24、<a
                 href="javascript:POBrowser.openWindowModeless('SetXlsTableByUser/index' , 'width=1200px;height=800px;');">控制不同用户编辑Excel文档中不同的区域</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -715,7 +715,7 @@
               <td>/SetXlsTableByUser</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、25、<a
                 href="javascript:POBrowser.openWindowModeless('SetExcelCellBorder/Excel' , 'width=1200px;height=800px;');">使用程序
                 “绘制” Excel表格线</a><span style=" color:Red;">（专业版、企业版）</span>
@@ -724,7 +724,7 @@
               <td>/SetExcelCellBorder</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、26、<a
                 href="javascript:POBrowser.openWindowModeless('SetExcelCellText/Excel' , 'width=1200px;height=800px;');">用程序设置Excel单元格文本的字体、颜色、对齐和背景色</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -733,7 +733,7 @@
               <td>/SetExcelCellText</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、27、<a
                 href="javascript:POBrowser.openWindowModeless('DataRegionFill2/Word' , 'width=1200px;height=800px;');">给Word文档中的数据区域（DataRegion）赋值并设置样式 </a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -743,7 +743,7 @@
               <td>/DataRegionFill2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、28、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelCellClick/Excel' , 'width=1200px;height=800px;');">响应Excel单元格点击事件</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -752,7 +752,7 @@
               <td>/ExcelCellClick</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、29、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelFill2/Excel' , 'width=1200px;height=800px;');">简单的给Excel单元格赋值设置文本颜色</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -761,7 +761,7 @@
               <td>/ExcelFill2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、30、<a
                 href="javascript:POBrowser.openWindowModeless('DataRegionEdit/Word' , 'width=1200px;height=800px;');">用户自定义模板中数据区域（DataRegion）的位置</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -770,7 +770,7 @@
               <td>/DataRegionEdit</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、31、<a
                 href="javascript:POBrowser.openWindowModeless('DataTagEdit/Word' , 'width=1200px;height=800px;');">用户自定义模板中数据标签（DataTag）的位置</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -779,7 +779,7 @@
               <td>/DataTagEdit</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、32、<a
                 href="javascript:POBrowser.openWindowModeless('DefinedNameCell/Excel' , 'width=1200px;height=800px;');">给Excel模板中定义了名称的单元格赋值</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -788,7 +788,7 @@
               <td>/DefinedNameCell</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、33、<router-link to="DefinedNameTable/index" target="_blank">给Excel模板中定义了名称的一块区域赋值</router-link><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>
@@ -797,7 +797,7 @@
               <td>/DefinedNameTable</td>
             </tr>
             <tr>
-              <td><img src="/static/images/pdf.jpg"/></td>
+              <td><img src="../../public/images/pdf.jpg"/></td>
               <td>二、34、<router-link to="FileMakerPDF/index" target="_blank">FileMaker转换单个文档为PDF（以Word为例） </router-link><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>演示使用FileMaker对象动态生成 PDF 文件的效果。虽然还是在客户端生成PDF文件后保存到服务器上的，但是不在客户端显式的打开文件。</p>
@@ -805,7 +805,7 @@
               <td>/FileMakerPDF</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、35、<a
                 href="javascript:POBrowser.openWindowModeless('WordCompare/Word' , 'width=1200px;height=800px;');">演示比较两个版本的Word文档的功能 </a><span
                 style=" color:Red;">（企业版）</span>
@@ -814,7 +814,7 @@
               <td>/WordCompare</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、36、<a
                 href="javascript:POBrowser.openWindowModeless('WordTextBox/Word' , 'width=1200px;height=800px;');">给Word文本框中的数据区域赋值 </a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -823,7 +823,7 @@
               <td>/WordTextBox</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、37、<a
                 href="javascript:POBrowser.openWindowModeless('WordRibbonCtrl/Word' , 'width=1200px;height=800px;');">控制Word的Ribbon工具栏 </a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -832,7 +832,7 @@
               <td>/WordRibbonCtrl</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、38、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelRibbonCtrl/Excel' , 'width=1200px;height=800px;');">控制Excel的Ribbon工具栏 </a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -841,7 +841,7 @@
               <td>/ExcelRibbonCtrl</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、39、<a
                 href="javascript:POBrowser.openWindowModeless('SplitWord/Word' , 'width=1200px;height=800px;');">拆分Word文档：把数据区域中的内容保存为子文档</a><span
                 style=" color:Red;">（企业版）</span>
@@ -850,7 +850,7 @@
               <td>/SplitWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、40、<a
                 href="javascript:POBrowser.openWindowModeless('CommentsList/Word' , 'width=1200px;height=800px;');">Word的两种新建批注方式和批注列表效果</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -860,7 +860,7 @@
               <td>/CommentsList</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、41、<a
                 href="javascript:POBrowser.openWindowModeless('RevisionsList/Word' , 'width=1200px;height=800px;');">Word中显示痕迹列表效果</a>
                 <p>演示了遍历当前文档中的所有痕迹以列表的形式显示以及点击痕迹列表中的痕迹导航到痕迹所在页的效果。</p>
@@ -868,7 +868,7 @@
               <td>/RevisionsList</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、42、<a
                 href="javascript:POBrowser.openWindowModeless('HandDrawsList/Word' , 'width=1200px;height=800px;');">Word显示手写批注列表效果</a><span
                 style=" color:Red;">（企业版）</span>
@@ -877,7 +877,7 @@
               <td>/HandDrawsList</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、43、<a
                 href="javascript:POBrowser.openWindowModeless('WordCreateTable/Word' , 'width=1200px;height=800px;');">在Word文档中动态创建表格并赋值</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -887,7 +887,7 @@
               <td>/WordCreateTable</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、44、<a
                 href="javascript:POBrowser.openWindowModeless('RunMacro2/Word' , 'width=1200px;height=800px;');">执行文档中有返回值的宏命令（以Word为例）</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -896,7 +896,7 @@
               <td>/RunMacro2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/pdf.jpg"/></td>
+              <td><img src="../../public/images/pdf.jpg"/></td>
               <td>二、45、<a
                 href="javascript:POBrowser.openWindowModeless('PDFSearch/PDF' , 'width=1200px;height=800px;');">PDF文档中的关键字搜索</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -905,7 +905,7 @@
               <td>/PDFSearch</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、46、<a
                 href="javascript:POBrowser.openWindowModeless('SaveFirstPageAsImg/Word' , 'width=1200px;height=800px;');">保存Word首页为图片</a><span
                 style=" color:Red;">（企业版）</span>
@@ -914,7 +914,7 @@
               <td>/SaveFirstPageAsImg</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、47、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelAdjustRC/Excel' , 'width=1200px;height=800px;');">Excel只读模式下调整行列</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -923,7 +923,7 @@
               <td>/ExcelAdjustRC</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、48、<a
                 href="javascript:POBrowser.openWindowModeless('WordDeleteRow/Word' , 'width=1200px;height=800px;');">删除Word表格中的指定单元格所在行</a><span
                 style=" color:Red;">（企业版）</span>
@@ -932,7 +932,7 @@
               <td>/WordDeleteRow</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、49、<a
                 href="javascript:POBrowser.openWindowModeless('InsertPageBreak2/Word' , 'width=1200px;height=800px;');">Word中使用服务器端方法插入分页符</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -941,16 +941,16 @@
               <td>/InsertPageBreak2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>二、50、<a
                 href="javascript:POBrowser.openWindowModeless('ExcelInsertImage/Excel' , 'width=1200px;height=800px;');">Excel单元格中插入图片</a><span
                 style=" color:Red;">（企业版）</span>
-                <p>演示了如何在Excel指定的单元格中插入图片，主要用到的方法是：cell.setValue("[imgage]/static/images/logo.jpg[/imgage]")。</p>
+                <p>演示了如何在Excel指定的单元格中插入图片，主要用到的方法是：cell.setValue("[imgage]../../public/images/logo.jpg[/imgage]")。</p>
               </td>
               <td>/ExcelInsertImage</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、51、<a
                 href="javascript:POBrowser.openWindowModeless('WordTableSetImg/Word' , 'width=1200px;height=800px;');">Word表格中的单元格内插入图片</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -959,7 +959,7 @@
               <td>/WordTableSetImg</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、52、<a
                 href="javascript:POBrowser.openWindowModeless('WordTableBorder/Word' , 'width=1200px;height=800px;');">设置Word表格的样式</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -969,7 +969,7 @@
             </tr>
 
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、53、<a
                 href="javascript:POBrowser.openWindowModeless('ExtractImage/Word' , 'width=1200px;height=800px;');">提取Word中的图片</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -978,7 +978,7 @@
               <td>/ExtractImage</td>
             </tr>
             <tr>
-              <td><img src="/static/images/pdf.jpg"/></td>
+              <td><img src="../../public/images/pdf.jpg"/></td>
               <td>二、54、<a
                 href="javascript:POBrowser.openWindowModeless('OpenImage/Image' , 'width=1055px;height=900px;');">在线打开图片</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -987,7 +987,7 @@
               <td>/OpenImage</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、55、<a
                 href="javascript:POBrowser.openWindowModeless('DisableCopyOut/Word' , 'width=1055px;height=900px;');">在线编辑Word文档时，禁止拷贝内容到外部</a><span
                 style=" color:Red;">（企业版）</span>
@@ -996,16 +996,16 @@
               <td>/DisableCopyOut</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、56、<a
                 href="javascript:POBrowser.openWindowModeless('InsertImageSetSize/Word' , 'width=1055px;height=900px;');">后台编程方式向Word数据区域中动态插入图片，并设置图片大小</a><span
                 style=" color:Red;">（企业版）</span>
                 <p>演示使用后台编程方式向Word数据区域中动态插入图片，并设置图片大小。</p>
               </td>
-              <td>/Insert/static/imagesetSize</td>
+              <td>/InsertImageSetSize</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>二、57、<a
                 href="javascript:POBrowser.openWindowModeless('RunMacroForDocm/Word' , 'width=1055px;height=900px;');">通过RunMarco直接调用word或者excel文件中的宏命令（以docm文件为例）</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1039,7 +1039,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、1、<a
                 href="javascript:POBrowser.openWindowModeless('FileMaker/Default' , 'width=1200px;height=800px;');">FileMaker批量转换文档（以Word为例）</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1048,7 +1048,7 @@
               <td>/FileMaker</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、2、<router-link to="ExaminationPaper/index" target="_blank">在Word文档中动态生成一张试卷</router-link>
                 <p>演示选择题库中的部分试题，动态生成一份试卷的效果。如果使用动态生成js的方式实现，那么所有的PageOffice版本都可以支持；<span style="color:Maroon;">如果使用动态创建数据区域的方式来实现，编程会更简单，但是标准版不支持。</span>
                 </p>
@@ -1056,7 +1056,7 @@
               <td>/ExaminationPaper</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、3、<a
                 href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/worddemo.rar">在OA或文档系统里文件流转中的使用效果</a>
                 <p>
@@ -1065,14 +1065,14 @@
               <td><p style="color:Red;">卓正网站 / worddemo.rar</p></td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>三、4、<a href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/exceldemo.rar">对Excel文件格式提供的两种编辑模式（编辑模式和只读模式）</a>
                 <p>演示了PageOffice打开编辑保存Excel文件的效果，还有在Excel中手写圈阅和盖章的效果。</p>
               </td>
               <td><p style="color:Red;">卓正网站 / exceldemo.rar</p></td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、5、<a href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/poword.rar">请假条示例</a>
                 <p>
                   演示了PageOffice对Word模板的数据填充生成正式文件效果，同时演示了从Word文件中获取数据提交到服务器端保存到数据库中的效果，同时还可以看到PageOffice对Word文件中可编辑区域的控制效果，不但可以控制哪些区域可以编辑，还可以控制哪些区域只能以选择的方式选择指定的数据来修改内容。</p>
@@ -1080,7 +1080,7 @@
               <td><p style="color:Red;">卓正网站 / poword.rar</p></td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>三、6、<a href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/poexcel.rar">模拟了一个简易的订单系统</a>
                 <p>
                   演示了PageOffice对Excel模板的数据填充生成Excel文件，演示了获取Excel表格中的数据保存到数据库，演示了用PageOffice填充数据库数据到Excel报表模板生成Excel报表，演示了填充不定行数据到模板表格中行自动增长效果。</p>
@@ -1088,7 +1088,7 @@
               <td><p style="color:Red;">卓正网站 / poexcel.rar</p></td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、7、<a
                 href="javascript:POBrowser.openWindowModeless('WordParagraph/Word' , 'width=1200px;height=800px;');">完全编程实现动态生成Word文件</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1097,7 +1097,7 @@
               <td>/WordParagraph</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>三、8、<a
                 href="javascript:POBrowser.openWindowModeless('DrawExcel/Excel' , 'width=1200px;height=800px;');">完全编程实现动态生成Excel文件</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1107,14 +1107,14 @@
               <td>/DrawExcel</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、9、<router-link to="TaoHong/index" target="_blank">使用PageOffice实现模板套红</router-link><span style=" color:Red;">（专业版、企业版）</span>
                 <p>演示了使用PageOffice的数据填充功能实现Word文件套红的效果。</p>
               </td>
               <td>/TaoHong</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、10、<router-link to="WordSalaryBill/index" target="_blank">插入Word表格模板动态生成工资条</router-link><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>演示了插入Word文件、填充Word表格数据、合并Word文件、循环插入表格等功能。</p>
@@ -1122,7 +1122,7 @@
               <td>/WordSalaryBill</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、11、<a href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/huiqiandan.rar">“汇签单”效果</a><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>演示了使用数据区域控制不同用户编辑不同区域，实现汇签单的效果。</p>
@@ -1130,7 +1130,7 @@
               <td><p style="color:Red;">/卓正网站 / huiqiandan.rar</p></td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、12、<a href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/TemplateEdit.rar">实现“用户自定义Word模板”动态生成文件</a><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>演示了如何通过用户自定义模板实现更灵活的动态填充生成Word文档。</p>
@@ -1138,7 +1138,7 @@
               <td><p style="color:Red;">/卓正网站 / TemplateEdit.rar</p></td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、13、<a
                 href="javascript:POBrowser.openWindowModeless('PrintFiles/Default' , 'width=1200px;height=800px;');">FileMaker批量生成并打印文件（以Word为例）</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1147,7 +1147,7 @@
               <td>/PrintFiles</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、14、<router-link to="SaveAndSearch/index" target="_blank">全文搜索包含关键字的Word文档</router-link><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>演示如何全文搜索包含关键字的Word文档，并且打开文档后高亮显示关键字。</p>
@@ -1155,7 +1155,7 @@
               <td>/SaveAndSearch</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、15、<a href="javascript:POBrowser.openWindowModeless('FileMakerConvertPDFs/index' , 'width=1200px;height=800px;');">Word批量转换成PDF文件</a>
 			  <!-- <td>三、15、<router-link to="FileMakerConvertPDFs/index" target="_blank">Word批量转换成PDF文件</router-link> -->
 			  <span style=" color:Red;">（专业版、企业版）</span>
@@ -1164,7 +1164,7 @@
               <td>/FileMakerConvertPDFs</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、16、<a href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/huiqiandan2.rar">“汇签单2”效果</a><span
                 style=" color:Red;">（专业版、企业版）</span>
                 <p>演示如何在HTML页面实现汇签单的效果。</p>
@@ -1172,7 +1172,7 @@
               <td><p style="color:Red;">/卓正网站 / huiqiandan2.rar</p></td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>三、17、<a href="http://www.zhuozhengsoft.com/down5/Java/BigDemo/selectdemo.rar">完美解决PageOffice控件遮挡下拉菜单和遮挡弹出div框的问题</a>
                 <p>演示使用衬iframe的方式完美解决PageOffice控件遮挡页面下拉菜单和PageOffice控件遮挡弹出div框的问题。</p>
               </td>
@@ -1203,7 +1203,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、1、<a
                 href="javascript:POBrowser.openWindowModeless('DeleteRow/Word' , 'width=1200px;height=800px;');">js
                 删除Word表格中光标所在行</a><span style=" color:Red;">（专业版、企业版）</span>
@@ -1212,7 +1212,7 @@
               <td>/DeleteRow</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、2、<a
                 href="javascript:POBrowser.openWindowModeless('HiddenRulars/Word' , 'width=1200px;height=800px;');">显示/隐藏Word文件中的标尺</a>
                 <p>演示使用js调用Office的VBA接口隐藏Word标尺的效果。</p>
@@ -1220,7 +1220,7 @@
               <td>/HiddenRulars</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、3、<a
                 href="javascript:POBrowser.openWindowModeless('WordAddBKMK/Word' , 'width=1200px;height=800px;');">在Word当前光标处插入书签</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1229,7 +1229,7 @@
               <td>/WordAddBKMK</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、4、<a
                 href="javascript:POBrowser.openWindowModeless('WordLocateBKMK/Word' , 'width=1200px;height=800px;');">js
                 定位光标到书签</a><span style=" color:Red;">（专业版、企业版）</span>
@@ -1238,7 +1238,7 @@
               <td>/WordLocateBKMK</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、5、<a
                 href="javascript:POBrowser.openWindowModeless('WordHyperLink/Word' , 'width=1200px;height=800px;');">Word
                 中插入超文本链接url</a><span style=" color:Red;">（专业版、企业版）</span>
@@ -1247,7 +1247,7 @@
               <td>/WordHyperLink</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、6、<a
                 href="javascript:POBrowser.openWindowModeless('WordMergeCell/Word' , 'width=1200px;height=800px;');">js合并Word单元格</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1256,7 +1256,7 @@
               <td>/WordMergeCell</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、7、<a
                 href="javascript:POBrowser.openWindowModeless('WordGetSelection/Word' , 'width=1200px;height=800px;');">js获取Word选中的文字</a>
                 <p>演示使用js调用Office的VBA接口，获取到文件中目前选中的文本内容。</p>
@@ -1264,7 +1264,7 @@
               <td>/WordGetSelection</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、8、<a
                 href="javascript:POBrowser.openWindowModeless('WordGoToPage/Word' , 'width=1200px;height=800px;');">js实现Word跳转到指定页面</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1273,7 +1273,7 @@
               <td>/WordGoToPage</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>四、9、<a
                 href="javascript:POBrowser.openWindowModeless('JsOpXlsCellText/Excel' , 'width=1200px;height=800px;');">js获取和设置Excel单元格的值</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1282,7 +1282,7 @@
               <td>/JsOpXlsCellText</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、10、<a
                 href="javascript:POBrowser.openWindowModeless('InsertPageBreak/Word' , 'width=1200px;height=800px;');">js实现在Word光标处插入分页符</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1291,7 +1291,7 @@
               <td>/InsertPageBreak</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、11、<a
                 href="javascript:POBrowser.openWindowModeless('WordDelBKMK/Word' , 'width=1200px;height=800px;');">删除Word文档中选中文本内容中的书签</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1300,7 +1300,7 @@
               <td>/WordDelBKMK</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、12、<a
                 href="javascript:POBrowser.openWindowModeless('InsertImgForJs/Word' , 'width=1200px;height=800px;');">js方式插入图片（以Word文档为例）</a><span
                 style=" color:Red;">（专业版、企业版）</span>
@@ -1309,7 +1309,7 @@
               <td>/InsertImgForJs</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>四、13、<a
                 href="javascript:POBrowser.openWindowModeless('InsertImgWaterMark/Word' , 'width=1200px;height=800px;');">js方式给Word文档插入图片水印</a><span
                 style=" color:Red;">（企业版）</span>
@@ -1342,7 +1342,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>五、1、<a
                 href="javascript:POBrowser.openWindowModeless('POBrowser/Word','width=1200px;height=800px;');">PageOffice浏览器方式在线打开文档（以Word为例）</a>
                 <p>成熟完美的新式文件打开方式“PageOffice浏览器方式”。此方式彻底永久性的解决了当前及将来各品牌浏览器（谷歌Chrome、Firefox等）可能出现的不加载PageOffice、各种Crash或不稳定问题。</p>
@@ -1351,20 +1351,20 @@
             </tr>
             <tr>
 
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>五、2、<a
                 href="javascript:POBrowser.openWindowModeless('HtmlWord/Word' , 'width=1200px;height=800px;');">用Html静态页面集成PageOffice（以Word为例）</a>
                 <p>演示如何使用静态Html页面集成PageOffice。</p></td>
               <td>/HtmlWord</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>五、3、<router-link to="CallParentFunction/index" target="_blank">使用PageOffice浏览器打开的页面（子页面）回调父页面的函数用来传值（以Word为例）</router-link>
                 <p>使用PageOffice浏览器打开的页面（子页面）回调父页面JS函数，此功能还可以实现当子页面关闭以后自动更新父页面的局部状态信息。</p></td>
               <td>/CallParentFunction</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>五、4、<a
                 href="javascript:POBrowser.openWindowModeless('PromptSave/Word' , 'width=1200px;height=800px;');">当用户关闭浏览器时，提示用户保存文档。解决onbeforeunload、onunload等无效、失效的问题</a>
                 <p>当用户关闭浏览器时，提示用户保存文档。此功能很好地避免了当用户修改完文档，关闭文档时忘记保存的问题<span style='font-size:15px;color:red;'>(注意：此功能只支持Word)</span>。
@@ -1372,14 +1372,14 @@
               <td>/PromptSave</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>五、5、<a
                 href="javascript:POBrowser.openWindowModeless('OpenWindowModeless/Word' , 'width=1200px;height=800px;');">使用非模态框打开文件</a>
                 <p>使用非模态框打开文件。使用此方法不会出现"立即切换PageOffice窗口"的模态框遮罩层。</p></td>
               <td>/OpenWindowModeless</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>五、6、<a
                 href="javascript:POBrowser.openWindowModeless('GetParentParamValue/Word' , 'width=1200px;height=800px;','张三');">父页面给POBrowser打开文件的页面（子页面）传递参数</a>
                 <p>
@@ -1388,7 +1388,7 @@
               <td>/GetParentParamValue</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>五、7、<a
                 href="javascript:POBrowser.openWindow('OpenWindow/Word' , 'width=1200px;height=800px;');">使用模态框打开文件</a><span style="color: red">（已经过时的方法，不推荐使用）</span>
                 <p>使用模态框打开文件。使用此方法会出现"立即切换PageOffice窗口"的模态框遮罩层。</p></td>
@@ -1422,7 +1422,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>六、1、<router-link to="SimpleWord2/Word" target="_blank">最简单在线打开保存Word文件（URL地址方式）</router-link>
                 <p>
                   演示PageOffice实现最基本的在线打开保存服务器上Word文件的功能，也是最简单的一个集成PageOffice的示例，第一次接触PageOffice产品的用户可以参考此示例把PageOffice集成到自己的项目中。</p>
@@ -1430,7 +1430,7 @@
               <td>/SimpleWord2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-2.png"/></td>
+              <td><img src="../../public/images/office-2.png"/></td>
               <td>六、2、<router-link to="SimpleExcel2/Excel" target="_blank">最简单在线打开保存Excel文件（URL地址方式）</router-link>
                 <p>
                   演示在线打开保存Excel文件的效果，与上面打开保存Word的代码几乎完全一样，只是WebOpen的第二个参数不一样。WebOpen方法的第二个参数需要与实际要打开的Office文档的文件格式保持一致。</p>
@@ -1438,14 +1438,14 @@
               <td>/SimpleExcel2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/pdf.jpg"/></td>
+              <td><img src="../../public/images/pdf.jpg"/></td>
               <td>六、3、<router-link to="POPDF2/PDF" target="_blank">在线打开PDF文件</router-link><span style=" color:Red;">（专业版、企业版）</span>
                 <p>演示使用POPDF组件在线打开PDF文件的效果，标题栏、菜单栏、工具栏和自定义工具条都可以分别隐藏，同时自定义工具条上的按钮的数量和功能均可编程控制。</p>
               </td>
               <td>/POPDF2</td>
             </tr>
             <tr>
-              <td><img src="/static/images/office-1.png"/></td>
+              <td><img src="../../public/images/office-1.png"/></td>
               <td>六、4、<router-link to="HtmlWord/Word" target="_blank">用Html静态页面集成PageOffice（以Word为例）</router-link>
                 <p>演示如何使用静态Html页面集成PageOffice。</p></td>
               <td>/HtmlWord</td>
@@ -1470,22 +1470,10 @@
     <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
   </div>
 </template>
-
 <script>
+
 export default {
   name: 'index',
-  mounted: function() {
-    var mytoken="testToken";
-    //由于POBrowser.openWindowModeless这种请求不是vue的axios请求，没法通过全局的axios拦截器给当前这个/openWord加上token，所以只能用我们特殊的加token的方式
-   // POBrowser.headerToken = "Authorization:"+mytoken;
-   // console.log("此处是给POBrowser请求加上token");
-    // 将vue中的方法赋值给window
-    //window.refresh = this.refresh;
-
-  }
+  
 }
 </script>
-
-<style>
-
-</style>

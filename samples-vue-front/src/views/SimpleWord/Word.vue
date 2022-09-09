@@ -1,7 +1,14 @@
 <template>
-  <div class="Word">
-    <div style="height: 800px; width: auto" v-html="poHtmlCode" />
-  </div>
+	<div class="Word">
+		<div>
+			<span style="color:red;">
+				此示例源码演示非vue公共组件集成方式。如需简化编码过程可使用PageOffice公共组件PageOffice.vue集成，但是公共组件方式不太适用于后台返回多个参数、回调父页面传参等功能。
+				PageOffice公共组件示例demo请联系QQ：800038353获取。
+			</span>
+		</div>
+		
+		<div style="height: 800px; width: auto" v-html="poHtmlCode" />
+	</div>
 </template>
 <script>
 const axios = require("axios");
@@ -14,7 +21,7 @@ export default {
     };
   },
   created: function () {
-    //由于vue中的axios拦截器给请求加token都得是ajax请求，所以这里建议axios方式去请求后台打开文件的controller方法
+    //由于vue中的axios拦截器给请求加token都得是ajax请求，所以这里必须是axios方式去请求后台打开文件的controllerf方法
     axios
       .post("/api/SimpleWord/Word")
       .then((response) => {

@@ -7,7 +7,6 @@
 		<input type="submit" value="取消" @click="closeWindow();"/>
 	</div>
   </div>
-</div>
 </template>
 
 <script>

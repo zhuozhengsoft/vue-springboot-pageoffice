@@ -4,7 +4,7 @@
 		<a  href="javascript:;" @click="convert(1)">1.动态生成Word文件并下载文件</a><br><br>
 		<a  href="javascript:;" @click="convert(2)">2.动态生成Word文件并打开文件</a>
 		<div id="pgImg" style="with:100px;height:100px;margin-top:20px;display: none;"  >
-		    正在生成文件，请稍等：<img src="/static/images/pg.gif">
+		    正在生成文件，请稍等：<img src="../../../public/images/pg.gif">
 		</div>
 		</body>
 	

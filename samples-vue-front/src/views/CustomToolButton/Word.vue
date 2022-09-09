@@ -1,7 +1,7 @@
 <template>
 <div class="Word">
 	    点击自定义工具栏中的“测试按钮”查看效果。<br/>
-	    <img src="/static/images/addbutton.jpg"/>
+	    <img src="../../../public/images/addbutton.jpg"/>
   <div style="width:auto; height:700px;" v-html="poHtmlCode" >
   </div>
 </div>

@@ -5,7 +5,7 @@
 		        注意：<span style="background-color: Yellow;">执行“执行宏myfunc”按钮之前需先设置好MS Word的关于执行宏命令的设置。
 		        <br/>设置步骤如下：打开一个Word文档，点击“文件”→“选项”→“信任中心”→“信任中心设置”→“宏设置”→勾选上“信任对VBA工程对象模型的访问（V）”</span>
 		    </div>
-		    <textarea id="textarea1" name="textarea1" style=" height:87px; width:486px;" rows="" cols="">
+		    <textarea class="textarea1" id="textarea1" style=" height:87px; width:486px;" rows="" cols="">
 					sub myfunc()
 				msgbox "123"
 				end sub
@@ -47,4 +47,6 @@
 	    }
 	}
 </script>
+
+
 

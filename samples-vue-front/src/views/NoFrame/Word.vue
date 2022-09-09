@@ -1,6 +1,6 @@
 <template>
 <div class="Word">
-	<div id="shut"><img src="/static/images/close.png" @click="Close()" title="关闭"/></div>
+	<div id="shut"><img src="../../../public/images/close.png" @click="Close()" title="关闭"/></div>
   <div style="width:auto; height:700px;" v-html="poHtmlCode" >
   </div>
 </div>

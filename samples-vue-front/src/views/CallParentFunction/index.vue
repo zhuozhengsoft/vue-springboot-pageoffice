@@ -17,8 +17,7 @@
 	      }
 	    },
 	    methods:{
-	      //控件中的一些常用方法都在这里调用，比如保存，打印等等
-	      
+	      //控件中的一些常用方法都在这里调用，比如保存，打印等等	      
 		  updateCount(value) {
 			  this.count = this.count + value;
 			  document.getElementById("Text1").value = this.count;
