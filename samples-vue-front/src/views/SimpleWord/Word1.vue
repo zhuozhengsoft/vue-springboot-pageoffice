@@ -34,6 +34,11 @@
     mounted: function(){
       // 将vue中的方法赋值给window
       window.Save = this.Save;
+	  
+	  // 国产操作系统需要加载WPS插件
+	  if(navigator.userAgent.toLowerCase().indexOf("linux")>0){
+	  	setTimeout(()=>document.getElementById('PageOfficeCtrl1').load('PageOfficeCtrl1','x-wps','59'),1000);
+	  }
     }
 }
 </script>

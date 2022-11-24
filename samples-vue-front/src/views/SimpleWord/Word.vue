@@ -64,6 +64,11 @@ export default {
     window.PrintFile = this.PrintFile;
     window.Close = this.Close;
     window.IsFullScreen = this.IsFullScreen;
+	
+	// 国产操作系统需要加载WPS插件 word文件是'x-wps'
+	if(navigator.userAgent.toLowerCase().indexOf("linux")>0){
+		setTimeout(()=>document.getElementById('PageOfficeCtrl1').load('PageOfficeCtrl1','x-wps','59'),1000);
+	}
   },
 };
 </script>

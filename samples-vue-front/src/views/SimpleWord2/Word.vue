@@ -33,6 +33,11 @@ export default {
   mounted: function () {
     // 将PageOffice控件中的方法通过mounted挂载到window对象上，只有挂载后才能被vue组件识别
     window.Save = this.Save;
+	
+	// 国产操作系统需要加载WPS插件
+	if(navigator.userAgent.toLowerCase().indexOf("linux")>0){
+		setTimeout(()=>document.getElementById('PageOfficeCtrl1').load('PageOfficeCtrl1','x-wps','59'),1000);
+	}
   },
 };
 </script>
