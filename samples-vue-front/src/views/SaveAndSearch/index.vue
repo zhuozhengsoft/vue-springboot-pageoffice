@@ -49,12 +49,9 @@
 		
 		            <tbody>
 						<tr v-for="docSearch in docSearchs" v-model="docSearchs">
-							<td>{{docSearch.fileName}}</td>
-							<td v-if="value != ''&& value !=null">
-								<input type="button" @click="editWord1(docSearch.id)" value="编辑1"></input>
-							</td>
-							<td v-else>
-								<input type="button" @click="editWord2(docSearch.id)" value="编辑2"></input>
+							<td>{{docSearch.fileName}}</td>					
+							<td>
+								<input type="button" @click="editWord(docSearch.id)" value="编辑"></input>
 							</td>
 										
 							
@@ -89,11 +86,8 @@
 	      })
 	    },
 	    methods:{
-			editWord1(id){
-				POBrowser.openWindowModeless('SaveAndSearch/Word?id='+id, 'width=1200px;height=800px;',this.value);
-			},
-			editWord2(id){
-				POBrowser.openWindowModeless('Word?id='+id, 'width=1200px;height=800px;');
+			editWord(id){
+				POBrowser.openWindowModeless('Word?id='+id, 'width=1200px;height=800px;',this.value);
 			},
 	      //控件中的一些常用方法都在这里调用，比如保存，打印等等
 			onColor(td) {
