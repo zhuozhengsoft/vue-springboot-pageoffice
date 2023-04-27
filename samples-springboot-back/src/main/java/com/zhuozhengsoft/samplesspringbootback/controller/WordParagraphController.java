@@ -69,8 +69,7 @@ public class WordParagraphController {
         body2.getFont().setBold(false);
         body2.getFont().setSize(12);
         body2.getFont().setName("黑体");
-        body2
-                .setValue("套接字是通信的基石，是支持TCP/IP协议的网络通信的基本操作单元。可以将套接字看作不同主机间的进程进行双向通信的端点，它构成了单个主机内及整个网络间的编程界面。套接字存在于通信域中，通信域是为了处理一般的线程通过套接字通信而引进的一种抽象概念。套接字通常和同一个域中的套接字交换数据（数据交换也可能穿越域的界限，但这时一定要执行某种解释程序）。各种进程使用这个相同的域互相之间用Internet协议簇来进行通信。\n");
+        body2.setValue("套接字是通信的基石，是支持TCP/IP协议的网络通信的基本操作单元。可以将套接字看作不同主机间的进程进行双向通信的端点，它构成了单个主机内及整个网络间的编程界面。套接字存在于通信域中，通信域是为了处理一般的线程通过套接字通信而引进的一种抽象概念。套接字通常和同一个域中的套接字交换数据（数据交换也可能穿越域的界限，但这时一定要执行某种解释程序）。各种进程使用这个相同的域互相之间用Internet协议簇来进行通信。\n");
         //body2.setValue("[image]../images/logo.jpg[/image]");
         ParagraphFormat bodyPara2 = body2.getParagraphFormat();
         bodyPara2.setLineSpacingRule(WdLineSpacing.wdLineSpace1pt5);
@@ -78,29 +77,24 @@ public class WordParagraphController {
         bodyPara2.setFirstLineIndent(21);
 
         //第三段
-        DataRegion body3 = doc.createDataRegion("PO_body3",
-                DataRegionInsertType.After, "PO_body2");
+        DataRegion body3 = doc.createDataRegion("PO_body3", DataRegionInsertType.After, "PO_body2");
         body3.getFont().setBold(false);
         body3.getFont().setColor(Color.getHSBColor(0, 128, 228));
         body3.getFont().setSize(14);
         body3.getFont().setName("华文彩云");
-        body3
-                .setValue("套接字可以根据通信性质分类，这种性质对于用户是可见的。应用程序一般仅在同一类的套接字间进行通信。不过只要底层的通信协议允许，不同类型的套接字间也照样可以通信。套接字有两种不同的类型：流套接字和数据报套接字。\n");
+        body3.setValue("套接字可以根据通信性质分类，这种性质对于用户是可见的。应用程序一般仅在同一类的套接字间进行通信。不过只要底层的通信协议允许，不同类型的套接字间也照样可以通信。套接字有两种不同的类型：流套接字和数据报套接字。\n");
         ParagraphFormat bodyPara3 = body3.getParagraphFormat();
         bodyPara3.setLineSpacingRule(WdLineSpacing.wdLineSpaceDouble);
         bodyPara3.setAlignment(WdParagraphAlignment.wdAlignParagraphLeft);
         bodyPara3.setFirstLineIndent(21);
 
-        DataRegion body4 = doc.createDataRegion("PO_body4",
-                DataRegionInsertType.After, "PO_body3");
+        DataRegion body4 = doc.createDataRegion("PO_body4", DataRegionInsertType.After, "PO_body3");
         body4.setValue("[image]/api/doc/WordParagraph/logo.png[/image]");
         //body4.setValue("[word]doc/1.doc[/word]");//还可嵌入其他Word文件
         ParagraphFormat bodyPara4 = body4.getParagraphFormat();
         bodyPara4.setAlignment(WdParagraphAlignment.wdAlignParagraphCenter);
 
         poCtrl.setWriter(doc);
-        //设置页面保存后执行的JS函数
-        poCtrl.setJsFunction_AfterDocumentSaved("SaveOK()");
         //隐藏菜单栏
         poCtrl.setMenubar(false);
         //打开Word文档

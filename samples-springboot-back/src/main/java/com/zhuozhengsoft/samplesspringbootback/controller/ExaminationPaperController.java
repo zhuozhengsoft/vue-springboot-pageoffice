@@ -182,9 +182,27 @@ public class ExaminationPaperController {
 
 
     @RequestMapping("save")
-    public void save(HttpServletRequest request, HttpServletResponse response) {
+    public void save(HttpServletRequest request, HttpServletResponse response) throws  Exception{
         FileSaver fs = new FileSaver(request, response);
-        fs.saveToFile(dir + "ExaminationPaper/" + fs.getFileName());
+        String err = "";
+        if (request.getParameter("id") != null
+                && request.getParameter("id").trim().length() > 0) {
+            String id = request.getParameter("id").trim();
+            Class.forName("org.sqlite.JDBC");
+            String strUrl =  "jdbc:sqlite:" + ResourceUtils.getURL("classpath:").getPath() + "static/demodata/ExaminationPaper.db";
+            Connection conn = DriverManager.getConnection(strUrl);
+            String sql = "UPDATE  Stream SET Word=?  where ID=" + id;
+            PreparedStatement pstmt = null;
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setBytes(1, fs.getFileBytes());
+            //pstmt.setBinaryStream(1,fs.getFileStream(),fs.getFileSize());
+            pstmt.executeUpdate();
+            pstmt.close();
+            conn.close();
+            fs.setCustomSaveResult("ok");
+        } else {
+            err = "<script>alert('未获得文件的ID，保存失败');</script>";
+        }
         fs.close();
     }
 }

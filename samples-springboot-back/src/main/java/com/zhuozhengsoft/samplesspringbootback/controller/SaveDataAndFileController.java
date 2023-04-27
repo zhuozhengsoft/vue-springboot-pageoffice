@@ -39,7 +39,7 @@ public class SaveDataAndFileController {
         //设置保存文档的页面
         poCtrl.setSaveFilePage("/api/SaveDataAndFile/save");//设置处理文件保存的请求方法
         //打开Word文档
-        poCtrl.webOpen("/api/doc/SaveDataAndFile/test.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/api/doc/SaveDataAndFile/test.doc", OpenModeType.docSubmitForm, "张三");
         return poCtrl.getHtmlCode("PageOfficeCtrl1");
     }
 

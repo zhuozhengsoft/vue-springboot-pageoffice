@@ -35,7 +35,7 @@ public class ExtractImageController {
         poCtrl.setSaveDataPage("/api/ExtractImage/save");//设置处理文件保存的请求方法
 
         //打开Word文档
-        poCtrl.webOpen("/api/doc/ExtractImage/test.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/api/doc/ExtractImage/test.doc", OpenModeType.docSubmitForm, "张三");
         return poCtrl.getHtmlCode("PageOfficeCtrl1");
     }
 
